@@ -21,20 +21,42 @@ git --version
 Java
 ----
 
+### Installing default JRE/JDK ###
+
 ```bash
-sudo apt-get java
+sudo apt-get update
+sudo apt-get install default-jre
+sudo apt-get install default-jdk
 ```
-or
+
+### Installing OpenJDK 7 ###
+
 ```bash
+sudo apt-get install openjdk-7-jre
+sudo apt-get install openjdk-7-jdk
+```
+
+### Installing Oracle JDK (from PPA) ###
+
+```bash
+sudo apt-get install python-software-properties
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
+sudo apt-get install oracle-java6-installer
+sudo apt-get install oracle-java7-installer
 sudo apt-get install oracle-java8-installer
-# +
-java -version
+
 # setup env
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+
+sudo apt-get install oracle-java6-set-default
+sudo apt-get install oracle-java7-set-default
 sudo apt-get install oracle-java8-set-default
 ```
-or
+
+### Installing Oracle JDK (manual) ###
+
 ```bash
 # http://www.wikihow.com/Install-Oracle-Java-on-Ubuntu-Linux
 # Check OS and Java versions
@@ -81,7 +103,7 @@ sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/local/java/j
 #	JDK
 sudo update-alternatives --set java /usr/local/java/jdk1.8.0_20/jre/bin/java
 #	? JRE ?
-sudo update-alternatives --set java /usr/local/java/jre1.8.0_20/bin/java 
+sudo update-alternatives --set java /usr/local/java/jre1.8.0_20/bin/java
 #	Javac
 sudo update-alternatives --set javac /usr/local/java/jdk1.8.0_20/bin/javac
 #	JDK Web Start
@@ -91,8 +113,8 @@ sudo update-alternatives --set javaws /usr/local/java/jre1.8.0_20/bin/javaws
 # Reload environment vars
 . /etc/profile
 # Test installation
-java -version 
-javac -version 
+java -version
+javac -version
 
 Maven
 -----
@@ -201,7 +223,7 @@ nvm install 0.11.14
 nvm use 0.11.14
 
 # what is installed
-nvm ls 
+nvm ls
 node -v
 # default
 nvm alias default 0.11.14
@@ -222,4 +244,3 @@ sudo apt-get install mysql-server
 ```bash
 sudo service mysql status|start|stop|restart
 ```
-
