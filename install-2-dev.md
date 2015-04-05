@@ -199,9 +199,9 @@ curl -sSL https://get.rvm.io | bash -s stable --ruby
 # Run command as a login shell
 # (enable this option in terminal)
 rvm requirements
-rvm install 2.1.4
-rvm use 2.1.4
-rvm --default use 2.1.4
+rvm install 2.2.1
+rvm use 2.2.1
+rvm --default use 2.2.1
 
 gem install compass
 gem install sass
@@ -219,14 +219,14 @@ curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
 source ~/.profile
 
 nvm ls-remote
-nvm install 0.11.14
-nvm use 0.11.14
+nvm install v0.12.2
+nvm use v0.12.2
 
 # what is installed
 nvm ls
 node -v
 # default
-nvm alias default 0.11.14
+nvm alias default v0.12.2
 nvm use default
 ```
 
