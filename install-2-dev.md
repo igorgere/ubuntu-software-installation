@@ -185,16 +185,6 @@ Ruby
 ----
 
 ```bash
-# NO!
-sudo apt-get install ruby
-```
-or
-```bash
-# NO!
-sudo apt-get install ruby-rvm
-```
-or
-```bash
 curl -sSL https://get.rvm.io | bash -s stable --ruby
 # Run command as a login shell
 # (enable this option in terminal)
