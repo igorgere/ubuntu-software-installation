@@ -32,11 +32,11 @@ sudo s2ram
 sudo s2disk
 ```
 
-Diodon
------
+Glipper
+-------
 
 ```bash
-sudo apt-get install diodon
+sudo apt-get install glipper
 ```
 
 ClassicMenu Indicator
@@ -50,7 +50,7 @@ Sticky Notes Indicator
 ----------------------
 
 ```bash
-sudo add-apt-repository ppa:umang/indicator-stickynotes && 
+sudo add-apt-repository ppa:umang/indicator-stickynotes &&
 sudo apt-get update && sudo apt-get install indicator-stickynotes
 ```
 
@@ -110,4 +110,3 @@ Install Unity Tweak Tool
 Download:
 Theme: http://j.gs/4qTR
 Icon(optional): http://j.gs/4qTS
-
