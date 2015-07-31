@@ -56,42 +56,12 @@ Glipper
 sudo apt-get install glipper
 ```
 
-ClassicMenu Indicator
----------------------
-
-```bash
-sudo apt-add-repository ppa:diesch/testing && sudo apt-get update && sudo apt-get install classicmenu-indicator
-```
-
 Sticky Notes Indicator
 ----------------------
 
 ```bash
 sudo add-apt-repository ppa:umang/indicator-stickynotes &&
 sudo apt-get update && sudo apt-get install indicator-stickynotes
-```
-
-FluxGui Indicator
------------------
-
-```bash
-sudo add-apt-repository ppa:kilian/f.lux && sudo apt-get update && sudo apt-get install fluxgui
-```
-
-System Monitor Indicator
-------------------------
-Textual with %.
-
-```bash
-sudo add-apt-repository ppa:noobslab/indicators && sudo apt-get update && sudo apt-get install indicator-sysmonitor
-```
-
-Multi-Load Indicator
---------------------
-Graphical.
-
-```bash
-sudo add-apt-repository ppa:indicator-multiload/stable-daily && sudo apt-get update && sudo apt-get install indicator-multiload
 ```
 
 Codecs
