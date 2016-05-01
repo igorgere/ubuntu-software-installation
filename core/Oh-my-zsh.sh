@@ -1,7 +1,9 @@
 # Oh my zsh
 # http://ohmyz.sh/
-apt-get install zsh
-apt-get install git-core
+# Requires
+#sudo apt install git-core
+
+sudo apt install zsh
 
 sudo curl -L http://install.ohmyz.sh | sh
 chsh -s `which zsh`

@@ -1,11 +1,13 @@
 # Hibernation & stand by
-sudo apt-get install uswsusp
+sudo apt install uswsusp
 sudo s2ram
 sudo s2disk
+sudo pm-hibernate
 
-# In file:
+# Indicator menu option
+# Create file:
 # /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
-# Add this
+# With content
 #
 # ```
 # [Re-enable hibernate by default in upower]
